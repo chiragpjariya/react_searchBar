@@ -11,7 +11,6 @@ function Input() {
 
     const dispatch = useDispatch();
     const searchInput = useSelector(state => state.search.searchInput);
-    const searchResults = useSelector(state => state.search.searchResults);
 
     const mutate = useMutation({
         mutationFn:(input) => getRecipes(input),
